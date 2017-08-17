@@ -1,0 +1,36 @@
+section.about-clients
+  .container
+    .grid
+      .grid__cell.grid__cell--center(class="5/6--desk 5/6--lap")
+
+        +title({
+          content01: 'Business',
+          content02: ' team',
+          color: 'white'
+        })
+
+        p.text--dark-bg.section--center Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.
+
+        .pictures
+          each name in ['girl01','boy01','girl02','girl03']
+            +img({
+              folder_name: 'people',
+              img_name: name,
+              add_class: 'img--people'
+            })
+//-
+          +img({
+            folder_name: 'people',
+            img_name: 'boy01',
+            add_class: 'img--people'
+          })
+          +img({
+            folder_name: 'people',
+            img_name: 'girl02',
+            add_class: 'img--people'
+          })
+          +img({
+            folder_name: 'people',
+            img_name: 'girl03',
+            add_class: 'img--people'
+          })

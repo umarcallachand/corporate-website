@@ -1,0 +1,19 @@
+.wrapper--head
+  .container
+
+    .grid
+      .grid__cell.grid__cell--center(class="5/6--desk 1--thumb")
+        header.l-header
+
+          p.logo--header
+
+            +img({
+              folder_name: 'icons',
+              img_name: 'quotes1',
+              add_class: 'logo--header'
+            })
+            | Agency
+
+          include ../components/navbar
+
+        include ../sections/intro

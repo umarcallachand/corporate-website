@@ -1,0 +1,653 @@
+/*! Avalanche | MIT License | @colourgarden */
+/**
+ * SETTINGS
+ */
+/**
+ * LOGIC aka THE MAGIC
+ */
+/**
+ * GRID LAYOUT
+ */
+.grid {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  font-size: 0; }
+
+.grid__cell {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  vertical-align: top;
+  font-size: 1rem; }
+
+.grid--center {
+  text-align: center; }
+  .grid--center > .grid__cell {
+    text-align: left; }
+
+.grid__cell--center {
+  display: block;
+  margin: 0 auto; }
+
+/**
+ * GRID WIDTHS
+ */
+.\31\/2, .\32\/4, .\33\/6, .\36\/12 {
+  width: 50%; }
+
+.\31\/3, .\32\/6, .\34\/12 {
+  width: 33.33333%; }
+
+.\32\/3, .\34\/6, .\38\/12 {
+  width: 66.66667%; }
+
+.\31\/4, .\33\/12 {
+  width: 25%; }
+
+.\33\/4, .\39\/12 {
+  width: 75%; }
+
+.\31\/6, .\32\/12 {
+  width: 16.66667%; }
+
+.\35\/6, .\31\30\/12 {
+  width: 83.33333%; }
+
+.\31\/12 {
+  width: 8.33333%; }
+
+.\35\/12 {
+  width: 41.66667%; }
+
+.\37\/12 {
+  width: 58.33333%; }
+
+.\31\31\/12 {
+  width: 91.66667%; }
+
+@media screen and (max-width: 499px) {
+  .\31\/2--thumb, .\32\/4--thumb, .\33\/6--thumb, .\36\/12--thumb {
+    width: 50%; }
+  .\31\/3--thumb, .\32\/6--thumb, .\34\/12--thumb {
+    width: 33.33333%; }
+  .\32\/3--thumb, .\34\/6--thumb, .\38\/12--thumb {
+    width: 66.66667%; }
+  .\31\/4--thumb, .\33\/12--thumb {
+    width: 25%; }
+  .\33\/4--thumb, .\39\/12--thumb {
+    width: 75%; }
+  .\31\/6--thumb, .\32\/12--thumb {
+    width: 16.66667%; }
+  .\35\/6--thumb, .\31\30\/12--thumb {
+    width: 83.33333%; }
+  .\31\/12--thumb {
+    width: 8.33333%; }
+  .\35\/12--thumb {
+    width: 41.66667%; }
+  .\37\/12--thumb {
+    width: 58.33333%; }
+  .\31\31\/12--thumb {
+    width: 91.66667%; } }
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .\31\/2--handheld, .\32\/4--handheld, .\33\/6--handheld, .\36\/12--handheld {
+    width: 50%; }
+  .\31\/3--handheld, .\32\/6--handheld, .\34\/12--handheld {
+    width: 33.33333%; }
+  .\32\/3--handheld, .\34\/6--handheld, .\38\/12--handheld {
+    width: 66.66667%; }
+  .\31\/4--handheld, .\33\/12--handheld {
+    width: 25%; }
+  .\33\/4--handheld, .\39\/12--handheld {
+    width: 75%; }
+  .\31\/6--handheld, .\32\/12--handheld {
+    width: 16.66667%; }
+  .\35\/6--handheld, .\31\30\/12--handheld {
+    width: 83.33333%; }
+  .\31\/12--handheld {
+    width: 8.33333%; }
+  .\35\/12--handheld {
+    width: 41.66667%; }
+  .\37\/12--handheld {
+    width: 58.33333%; }
+  .\31\31\/12--handheld {
+    width: 91.66667%; } }
+
+@media screen and (min-width: 500px) {
+  .\31\/2--handheld-and-up, .\32\/4--handheld-and-up, .\33\/6--handheld-and-up, .\36\/12--handheld-and-up {
+    width: 50%; }
+  .\31\/3--handheld-and-up, .\32\/6--handheld-and-up, .\34\/12--handheld-and-up {
+    width: 33.33333%; }
+  .\32\/3--handheld-and-up, .\34\/6--handheld-and-up, .\38\/12--handheld-and-up {
+    width: 66.66667%; }
+  .\31\/4--handheld-and-up, .\33\/12--handheld-and-up {
+    width: 25%; }
+  .\33\/4--handheld-and-up, .\39\/12--handheld-and-up {
+    width: 75%; }
+  .\31\/6--handheld-and-up, .\32\/12--handheld-and-up {
+    width: 16.66667%; }
+  .\35\/6--handheld-and-up, .\31\30\/12--handheld-and-up {
+    width: 83.33333%; }
+  .\31\/12--handheld-and-up {
+    width: 8.33333%; }
+  .\35\/12--handheld-and-up {
+    width: 41.66667%; }
+  .\37\/12--handheld-and-up {
+    width: 58.33333%; }
+  .\31\31\/12--handheld-and-up {
+    width: 91.66667%; } }
+
+@media screen and (max-width: 800px) {
+  .\31\/2--pocket, .\32\/4--pocket, .\33\/6--pocket, .\36\/12--pocket {
+    width: 50%; }
+  .\31\/3--pocket, .\32\/6--pocket, .\34\/12--pocket {
+    width: 33.33333%; }
+  .\32\/3--pocket, .\34\/6--pocket, .\38\/12--pocket {
+    width: 66.66667%; }
+  .\31\/4--pocket, .\33\/12--pocket {
+    width: 25%; }
+  .\33\/4--pocket, .\39\/12--pocket {
+    width: 75%; }
+  .\31\/6--pocket, .\32\/12--pocket {
+    width: 16.66667%; }
+  .\35\/6--pocket, .\31\30\/12--pocket {
+    width: 83.33333%; }
+  .\31\/12--pocket {
+    width: 8.33333%; }
+  .\35\/12--pocket {
+    width: 41.66667%; }
+  .\37\/12--pocket {
+    width: 58.33333%; }
+  .\31\31\/12--pocket {
+    width: 91.66667%; } }
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .\31\/2--lap, .\32\/4--lap, .\33\/6--lap, .\36\/12--lap {
+    width: 50%; }
+  .\31\/3--lap, .\32\/6--lap, .\34\/12--lap {
+    width: 33.33333%; }
+  .\32\/3--lap, .\34\/6--lap, .\38\/12--lap {
+    width: 66.66667%; }
+  .\31\/4--lap, .\33\/12--lap {
+    width: 25%; }
+  .\33\/4--lap, .\39\/12--lap {
+    width: 75%; }
+  .\31\/6--lap, .\32\/12--lap {
+    width: 16.66667%; }
+  .\35\/6--lap, .\31\30\/12--lap {
+    width: 83.33333%; }
+  .\31\/12--lap {
+    width: 8.33333%; }
+  .\35\/12--lap {
+    width: 41.66667%; }
+  .\37\/12--lap {
+    width: 58.33333%; }
+  .\31\31\/12--lap {
+    width: 91.66667%; } }
+
+@media screen and (min-width: 801px) {
+  .\31\/2--lap-and-up, .\32\/4--lap-and-up, .\33\/6--lap-and-up, .\36\/12--lap-and-up {
+    width: 50%; }
+  .\31\/3--lap-and-up, .\32\/6--lap-and-up, .\34\/12--lap-and-up {
+    width: 33.33333%; }
+  .\32\/3--lap-and-up, .\34\/6--lap-and-up, .\38\/12--lap-and-up {
+    width: 66.66667%; }
+  .\31\/4--lap-and-up, .\33\/12--lap-and-up {
+    width: 25%; }
+  .\33\/4--lap-and-up, .\39\/12--lap-and-up {
+    width: 75%; }
+  .\31\/6--lap-and-up, .\32\/12--lap-and-up {
+    width: 16.66667%; }
+  .\35\/6--lap-and-up, .\31\30\/12--lap-and-up {
+    width: 83.33333%; }
+  .\31\/12--lap-and-up {
+    width: 8.33333%; }
+  .\35\/12--lap-and-up {
+    width: 41.66667%; }
+  .\37\/12--lap-and-up {
+    width: 58.33333%; }
+  .\31\31\/12--lap-and-up {
+    width: 91.66667%; } }
+
+@media screen and (max-width: 1024px) {
+  .\31\/2--portable, .\32\/4--portable, .\33\/6--portable, .\36\/12--portable {
+    width: 50%; }
+  .\31\/3--portable, .\32\/6--portable, .\34\/12--portable {
+    width: 33.33333%; }
+  .\32\/3--portable, .\34\/6--portable, .\38\/12--portable {
+    width: 66.66667%; }
+  .\31\/4--portable, .\33\/12--portable {
+    width: 25%; }
+  .\33\/4--portable, .\39\/12--portable {
+    width: 75%; }
+  .\31\/6--portable, .\32\/12--portable {
+    width: 16.66667%; }
+  .\35\/6--portable, .\31\30\/12--portable {
+    width: 83.33333%; }
+  .\31\/12--portable {
+    width: 8.33333%; }
+  .\35\/12--portable {
+    width: 41.66667%; }
+  .\37\/12--portable {
+    width: 58.33333%; }
+  .\31\31\/12--portable {
+    width: 91.66667%; } }
+
+@media screen and (min-width: 1025px) {
+  .\31\/2--desk, .\32\/4--desk, .\33\/6--desk, .\36\/12--desk {
+    width: 50%; }
+  .\31\/3--desk, .\32\/6--desk, .\34\/12--desk {
+    width: 33.33333%; }
+  .\32\/3--desk, .\34\/6--desk, .\38\/12--desk {
+    width: 66.66667%; }
+  .\31\/4--desk, .\33\/12--desk {
+    width: 25%; }
+  .\33\/4--desk, .\39\/12--desk {
+    width: 75%; }
+  .\31\/6--desk, .\32\/12--desk {
+    width: 16.66667%; }
+  .\35\/6--desk, .\31\30\/12--desk {
+    width: 83.33333%; }
+  .\31\/12--desk {
+    width: 8.33333%; }
+  .\35\/12--desk {
+    width: 41.66667%; }
+  .\37\/12--desk {
+    width: 58.33333%; }
+  .\31\31\/12--desk {
+    width: 91.66667%; } }
+
+@media screen and (min-width: 1160px) {
+  .\31\/2--widescreen, .\32\/4--widescreen, .\33\/6--widescreen, .\36\/12--widescreen {
+    width: 50%; }
+  .\31\/3--widescreen, .\32\/6--widescreen, .\34\/12--widescreen {
+    width: 33.33333%; }
+  .\32\/3--widescreen, .\34\/6--widescreen, .\38\/12--widescreen {
+    width: 66.66667%; }
+  .\31\/4--widescreen, .\33\/12--widescreen {
+    width: 25%; }
+  .\33\/4--widescreen, .\39\/12--widescreen {
+    width: 75%; }
+  .\31\/6--widescreen, .\32\/12--widescreen {
+    width: 16.66667%; }
+  .\35\/6--widescreen, .\31\30\/12--widescreen {
+    width: 83.33333%; }
+  .\31\/12--widescreen {
+    width: 8.33333%; }
+  .\35\/12--widescreen {
+    width: 41.66667%; }
+  .\37\/12--widescreen {
+    width: 58.33333%; }
+  .\31\31\/12--widescreen {
+    width: 91.66667%; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .\31\/2--retina, .\32\/4--retina, .\33\/6--retina, .\36\/12--retina {
+    width: 50%; }
+  .\31\/3--retina, .\32\/6--retina, .\34\/12--retina {
+    width: 33.33333%; }
+  .\32\/3--retina, .\34\/6--retina, .\38\/12--retina {
+    width: 66.66667%; }
+  .\31\/4--retina, .\33\/12--retina {
+    width: 25%; }
+  .\33\/4--retina, .\39\/12--retina {
+    width: 75%; }
+  .\31\/6--retina, .\32\/12--retina {
+    width: 16.66667%; }
+  .\35\/6--retina, .\31\30\/12--retina {
+    width: 83.33333%; }
+  .\31\/12--retina {
+    width: 8.33333%; }
+  .\35\/12--retina {
+    width: 41.66667%; }
+  .\37\/12--retina {
+    width: 58.33333%; }
+  .\31\31\/12--retina {
+    width: 91.66667%; } }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+.wrapper {
+  width: 100%; }
+
+section {
+  height: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+header {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold; }
+  header li,
+  header ul,
+  header .logo--header,
+  header a,
+  header p {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 5px; }
+  header p {
+    font-size: 2.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif; }
+  header ul {
+    float: right;
+    padding-top: 25px; }
+  header a {
+    font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+.wrapper--head {
+  background-image: url("img/bg/bg-hero.png");
+  background-position: center;
+  height: 600px;
+  background-attachment: fixed;
+  background-size: cover; }
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bolder; }
+
+.title--white {
+  color: white; }
+
+.title--secondary {
+  color: #FBA419; }
+
+.section--main {
+  display: inline-block;
+  /*width: 30%;*/ }
+
+.text--light-bg, .text--dark-bg {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.3em; }
+
+.text--dark-bg {
+  color: white; }
+
+.btn {
+  background-color: #FBA419;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  border: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Lato Light, sans-serif; }
+
+.btn--large {
+  font-size: 1.25em; }
+
+.section--left {
+  display: inline-block;
+  /*width: 50%;*/
+  padding-right: 25px;
+  margin-top: 60px; }
+
+.section--right {
+  display: inline-block;
+  float: right;
+  /*width: 50%;*/
+  margin-top: 60px; }
+
+.image-meeting {
+  width: 90%;
+  float: right; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+  .container .container--2 {
+    padding-bottom: 80px; }
+
+.quoting {
+  display: inline-block;
+  padding-bottom: 100px;
+  width: 5%; }
+
+.iconed {
+  display: inline-block;
+  width: 80%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #555;
+  font-size: 1.1em; }
+
+.image--with--caption {
+  position: relative;
+  width: 50%; }
+
+.image--caption {
+  width: 70%;
+  color: white;
+  font-family: Lato Medium, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  margin-left: 110px; }
+
+.creative-works {
+  background-image: url("img/bg/bg-city.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.icon {
+  display: inline-block;
+  padding-right: 25px;
+  width: 80px; }
+
+.boxes--creative-work {
+  display: inline-block;
+  width: 80%;
+  font-size: 0.9em; }
+  .boxes--creative-work h2 {
+    margin: 5px; }
+
+.section--our-company {
+  padding-top: 160px; }
+
+.available-work--sections {
+  display: inline-block; }
+
+.vertical--section {
+  display: inline-block;
+  width: 45%;
+  text-align: center; }
+
+.aside--far-left, .aside--middle-left {
+  background-image: url("img/misc/organisation.png");
+  padding-top: 140px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 20px; }
+  .aside--far-left .text--dark-bg, .aside--middle-left .text--dark-bg {
+    font-size: 1.1em; }
+
+.aside--middle-left {
+  background-image: url("img/misc/office.png"); }
+
+.vertical-section--icon {
+  width: 67px; }
+
+.about-clients {
+  padding-top: 60px;
+  background-image: url("img/bg/bg-groups.png");
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.section--center {
+  width: 70%;
+  margin: 0 auto; }
+
+.img--people {
+  width: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 40px; }
+
+.listing--available-works {
+  list-style-image: url("img/icons/icon-checklist.png");
+  list-style-position: outside;
+  font-size: 1.2em; }
+  .listing--available-works li {
+    padding: 5px; }
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+  font-family: Lato regular;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px; }
+
+@media only screen and (max-width: 499px) {
+  html {
+    font-size: 11px; }
+  section {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    text-align: center; }
+  .image--with--caption {
+    width: 100%; }
+  .section--left {
+    margin-top: 5px;
+    padding-right: 0; }
+  .section--right {
+    margin-top: 50px; }
+  .image--caption {
+    display: inline-block;
+    color: black;
+    position: static; }
+  .briefing-professionals {
+    height: 850px; }
+  .section--our-company {
+    padding-top: 50px; }
+  .boxes--creative-work {
+    width: 86%; }
+  .creative-works {
+    height: 1100px; }
+  .icon {
+    padding-top: 20px; }
+  .vertical--section {
+    float: left;
+    width: 50%; }
+  .aside--far-left, .aside--middle-left {
+    padding-top: 50px;
+    margin-right: 5px; }
+  .listing--available-works {
+    text-align: left;
+    margin-top: 50px; }
+  .available-work {
+    height: 950px; }
+  .img--people {
+    width: 50%; }
+  .about-clients {
+    height: 800px; } }
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+  html {
+    font-size: 13px; }
+  section {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 20px 0 20px; }
+  .image--with--caption {
+    width: 70%;
+    margin: 0 auto; }
+  .section--left {
+    margin-top: 5px;
+    padding-right: 0; }
+  .section--right {
+    margin-top: 50px; }
+  .image--caption {
+    display: inline-block;
+    color: black;
+    position: static; }
+  .briefing-professionals {
+    height: 850px; }
+  .section--our-company {
+    padding-top: 50px; }
+  .boxes--creative-work {
+    width: 86%; }
+  .creative-works {
+    height: 1100px; }
+  .icon {
+    padding-top: 20px; }
+  .vertical--section {
+    float: left;
+    width: 50%; }
+  .aside--far-left, .aside--middle-left {
+    padding-top: 50px;
+    margin-right: 5px; }
+  .listing--available-works {
+    text-align: left;
+    margin-top: 50px; }
+  .available-work {
+    height: 950px; }
+  .img--people {
+    width: 30%; }
+  .about-clients {
+    height: 800px; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 801px) {
+  html {
+    font-size: 12px; }
+  .wrapper--head {
+    height: 500px; }
+  .section--main {
+    margin: 50px auto 0 100px; }
+  .briefing-professionals {
+    height: 480px; }
+  .image--with--caption {
+    width: 30%;
+    margin-top: 16%; }
+  .image--caption {
+    position: static;
+    color: black;
+    margin: 0 auto; }
+  .section--our-company {
+    margin: 0; }
+  .creative-works {
+    height: 480px; }
+  .creative-works .section--right {
+    margin: 50 auto; }
+  .vertical--section {
+    margin-top: 50px; }
+  .aside--far-left, .aside--middle-left {
+    padding-top: 100px;
+    margin-right: 5px; }
+  .about-clients {
+    height: 500px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+section.briefing-professionals
+  .container
+    .grid
+      .grid__cell.grid__cell--center(class="5/6")
+
+        article.section--left(class="1/2--desk 2/3--lap")
+
+          +title({
+            content01: 'Welcome ',
+            content02: ' for Professionals',
+            color: 'black'
+          })
+
+          .article--iconed
+            +img({
+              folder_name: 'icons',
+              img_name: 'quotes2',
+              add_class: 'quoting'
+            })
+
+            p.iconed Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.
+            p.text--light-bg Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.
+
+            button.btn.btn--medium Read More
+
+        .section--right.image--with--caption(class="1/3--desk 1/4--lap")
+
+          +img({
+            folder_name: 'misc',
+            img_name: 'meeting',
+            add_class: 'image-meeting'
+          })
+
+          p.image--caption Lorem ipsum dolor sit ametelit, sed do eiusmod temporesse.

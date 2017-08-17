@@ -1,0 +1,7 @@
+mixin img(options)
+
+  - var folder_name = options.folder_name || " ";
+  - var img_name = options.img_name || " ";
+  - var add_class = options.add_class || " ";
+
+  img(class= add_class src="img/" + folder_name + "/" + img_name + ".png" alt="alternative")

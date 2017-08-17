@@ -1,0 +1,10 @@
+mixin icon-list(options)
+
+  - var icon = options.icon || " ";
+  - var title = options.title || " ";
+  - var paragraph = options.paragraph || " ";
+
+  img.icon(src="img/icons/icon-" + icon + ".png" alt="alternative")
+  .boxes--creative-work
+    h2.title--secondary= title
+    p.text--dark-bg= paragraph

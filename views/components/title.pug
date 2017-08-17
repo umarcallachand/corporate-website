@@ -1,0 +1,8 @@
+mixin title(options)
+
+  - var content01 = options.content01 || " ";
+  - var content02 = options.content02 || " ";
+  - var color = options.color || " ";
+
+  h1(class = "title--" + color)= content01
+    span.title--secondary= content02
